@@ -1,0 +1,27 @@
+{
+  "name": "colorful",
+  "version": "1.0.0",
+  "description": "colorful if a terminal tool for color, logging and command",
+  "keywords": [
+    "color",
+    "logging",
+    "console",
+    "terminal",
+    "command"
+  ],
+  "author": {
+    "name": "Hsiaoming Yang",
+    "email": "lepture@me.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lepture/colorful.git"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  }
+}

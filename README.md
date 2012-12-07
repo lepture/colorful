@@ -1,0 +1,3 @@
+# Colorful support for terminal
+
+---------------------
