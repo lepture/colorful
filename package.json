@@ -18,6 +18,7 @@
     "url": "https://github.com/lepture/colorful.git"
   },
   "devDependencies": {
+    "jshint": "*",
     "mocha": "*",
     "should": "*"
   },
