@@ -82,7 +82,8 @@
   // Require all non-global variables be declared before they are used.
   "funcscope": true,
 
-
+  // Don't check __proto__
+  "proto": true,
   // Personal styling preferences.
   "newcap": true,
   // Require capitalization of all constructor functions e.g. `new F()`.
