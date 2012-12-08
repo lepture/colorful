@@ -23,6 +23,6 @@
     "should": "*"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "make test"
   }
 }
