@@ -1,4 +1,4 @@
-var Logging = require('../lib/logging');
+var Logging = require('../lib/logging').Logging;
 var should = require('should');
 
 describe('Logging', function() {
