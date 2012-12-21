@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="nico 0.1.1">
+    <meta name="theme" content="one 0.1">
+    <title>Colorful</title>
+    <link rel="stylesheet" href="./static/one.css" />
+    <link rel="stylesheet" href="./static/syntax.css" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21475122-5']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = 'https://ssl.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="navigation" role="navigation">
+      <div class="container">
+        <a class="home" href="">Colorful</a>
+      </div>
+    </div>
+    <div class="document">
+<div class="hentry">
+  <h1 class="entry-title">Colorful</h1>
+  <blockquote class="entry-description"><p>It&#39;s not just color, it&#39;s everything colorful in terminal.</p></blockquote>
+  <div class="entry-content"><h1 id="color">Color</h1>
+<p>Color in terminal and only terminal.</p>
+<h2 id="programmer">Programmer</h2>
+<p>As a programmer, you think they are functions:</p>
+<div class="highlight"><pre><code class="javascript"><span class="keyword">var</span> color = require(<span class="string">'colorful'</span>).color
+color.red(<span class="string">'hello'</span>)
+color.underline(<span class="string">'hello'</span>)
+color.red(color.underline(<span class="string">'hello'</span>))
+</code></pre></div><h2 id="human">Human</h2>
+<p>As a human, you think you are a painter:</p>
+<div class="highlight"><pre><code class="javascript"><span class="keyword">var</span> paint = require(<span class="string">'colorful'</span>).paint
+paint(<span class="string">'hello'</span>).red.color
+paint(<span class="string">'hello'</span>).bold.underline.red.color
+</code></pre></div>
+<p><strong>WTF</strong>, is bold, underline a color? If you don&#39;t like the idea, try:</p>
+<div class="highlight"><pre><code class="javascript">paint(<span class="string">'hello'</span>).bold.underline.red.style
+</code></pre></div><h2 id="alien">Alien</h2>
+<p>As an alien, you are from outer space, you think it should be:</p>
+<div class="highlight"><pre><code class="javascript">require(<span class="string">'colorful'</span>).colorful()
+<span class="string">'hello'</span>.to.red.color
+<span class="string">'hello'</span>.to.underline.bold.red.color
+<span class="string">'hello'</span>.to.underline.bold.red.style
+</code></pre></div><h2 id="detective">Detective</h2>
+<p>As a detective, you think we should detect if color is supported:</p>
+<div class="highlight"><pre><code class="javascript">require(<span class="string">'colorful'</span>).isSupported
+</code></pre></div>
+<hr/>
+<h1 id="logging">Logging</h1>
+<p>Colorful and nested logging in terminal.</p>
+
+<p><a href="http://lab.lepture.com/nico/"><img src="http://lab.lepture.com/nico/nico-look.png" alt="nico"/></a></p>
+<h2 id="favorite">Favorite</h2>
+<p>Default is my favorite, we should do nothing:</p>
+<div class="highlight"><pre><code class="javascript"><span class="keyword">var</span> logging = require(<span class="string">'colorful'</span>).logging;
+<span class="comment">// start a nested logging</span>
+logging.start(<span class="string">'Start Application'</span>)
+logging.info(<span class="string">'send an info message'</span>)
+
+<span class="comment">// start another nested logging</span>
+logging.start(<span class="string">'Start subprocess'</span>)
+logging.warn(<span class="string">'send a warn message'</span>)
+logging.end(<span class="string">'End subprocess'</span>)
+
+logging.error(<span class="string">'send an error message'</span>)
+logging.debug(<span class="string">'send a debug message'</span>)
+logging.end(<span class="string">'End Application'</span>)
+</code></pre></div><h2 id="config">Config</h2>
+<p>I want to show debug message:</p>
+<div class="highlight"><pre><code class="javascript">logging.config(<span class="string">'debug'</span>)
+<span class="comment">// or</span>
+logging.config({level: <span class="string">'debug'</span>})
+logging.config({verbose: <span class="literal">true</span>})
+</code></pre></div><h2 id="customize">Customize</h2></div>
+</div>
+</div>
+    <div class="footer">
+      <p class="copyright">powered by <a href="http://lab.lepture.com/nico/">nico</a> 0.1.1</p>
+    </div>
+    <script src="http://static.alipayobjects.com/seajs/1.2.1/sea.js" data-main="./static/one.js"></script>
+    <div class="github"><a class="github-link" href="https://github.com/lepture/colorful">Fork me on GitHub</a></div>
+  </body>
+</html>
