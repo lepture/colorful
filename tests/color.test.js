@@ -1,4 +1,5 @@
 var color = require('../lib/color');
+var paint = color.paint;
 var should = require('should');
 
 describe('Color', function() {
@@ -6,11 +7,12 @@ describe('Color', function() {
     should.exists(color.isSupported);
   });
   it('should be red hello', function() {
-    color('hello').red.color.should.equal('\x1b[31mhello\x1b[39m');
+    paint('hello').red.color.should.equal('\x1b[31mhello\x1b[39m');
+    paint('hello').red.style.should.equal('\x1b[31mhello\x1b[39m');
   });
   it('should be colorful string', function() {
     should.not.exists(String.prototype.to);
-    color();
+    color.colorful();
     should.exists(String.prototype.to);
   });
   it('should be underline red hello', function() {
