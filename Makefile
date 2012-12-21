@@ -26,5 +26,18 @@ coverage:
 	@echo "Built Report to ${out}"
 	@echo
 
+theme = $(HOME)/.spm/themes/one
+documentation:
+	@cp README.md _docs/index.md
+	@nico build --theme=${theme}
+
+publish: clean documentation
+	@ghp-import _site -p
+
+clean:
+	@rm -fr _site
+
+server:
+	@nico server --theme=${theme}
 
 .PHONY: all build test lint coverage

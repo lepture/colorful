@@ -1,6 +1,6 @@
-# Colorful support for terminal
+# Colorful
 
-It's not just color, it's colorful in terminal
+It's not just color, it's everything colorful in terminal.
 
 ---------------------
 
@@ -59,6 +59,8 @@ require('colorful').isSupported
 # Logging
 
 Colorful and nested logging in terminal.
+
+[![nico](http://lab.lepture.com/nico/nico-look.png)](http://lab.lepture.com/nico/)
 
 ## Favorite
 
