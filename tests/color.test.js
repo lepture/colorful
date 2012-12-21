@@ -6,11 +6,11 @@ describe('Color', function() {
     should.exists(color.isSupported);
   });
   it('should be red hello', function() {
-    color.red('hello').should.equal('\x1b[31mhello\x1b[39m');
+    color('hello').red.color.should.equal('\x1b[31mhello\x1b[39m');
   });
   it('should be colorful string', function() {
     should.not.exists(String.prototype.to);
-    color.colorful();
+    color();
     should.exists(String.prototype.to);
   });
   it('should be underline red hello', function() {

@@ -1,4 +1,4 @@
-exports.color = require('./lib/color');
-exports.colorful = exports.color.colorful;
+var color = require('./lib/color');
+module.exports = color;
 exports.program = require('./lib/program');
-exports.Logging = require('./lib/logging').Logging;
+exports.logging = require('./lib/logging');
