@@ -1,6 +1,7 @@
 var color = require('../lib/color');
 var paint = color.paint;
 var should = require('should');
+color.isatty = true;
 
 describe('Color', function() {
   it('should be supported', function() {
