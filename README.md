@@ -52,6 +52,11 @@ As a detective, you think we should detect if color is supported:
 
 ```javascript
 require('colorful').isSupported
+
+// we can disable color
+require('colorful').disabled = true
+require('colorful').isSupported
+// => false
 ```
 
 ------
