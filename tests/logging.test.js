@@ -22,10 +22,8 @@ describe('Logging', function() {
     logger.debug('this is debug');
     logger.info('this is info');
     logger.start('Hello world');
-    logger.config({icons: {startIcon: '+'}});
 
     logger.start('Hello world');
-    logger.config({colors: {info: null}});
     logger.info('this is info');
   });
 });
