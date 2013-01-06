@@ -1,4 +1,5 @@
-var Logging = require('../lib/logging').Logging;
+var logging = require('../lib/logging');
+var Logging = logging.Logging;
 var should = require('should');
 
 describe('Logging', function() {
@@ -25,6 +26,13 @@ describe('Logging', function() {
 
     logger.start('Hello world');
     logger.info('this is info');
+  });
+  it('should have event', function(done) {
+    logging.on('logging-info', function(data) {
+      data.should.equal('hello');
+      done();
+    });
+    logging.info('hello');
   });
 });
 
