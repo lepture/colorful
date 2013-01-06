@@ -38,6 +38,7 @@ clean:
 	@rm -fr _site
 
 server:
+	@cp README.md _docs/index.md
 	@nico server --theme=${theme}
 
 .PHONY: all build test lint coverage

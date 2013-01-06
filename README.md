@@ -98,4 +98,35 @@ logging.config({level: 'debug'})
 logging.config({verbose: true})
 ```
 
-## Customize
+## Scheme
+
+Define your logging scheme:
+
+```javascript
+var scheme = {
+    debug: {
+        start: '# ',
+        color: 'gray',
+        end: ' #'
+    },
+    info: {
+        start: 'v ',
+        color: 'green'
+    },
+    warn: {
+        start: '! ',
+        color: 'yellow'
+    },
+    error: {
+        start: 'x ',
+        color: 'red'
+    },
+    start: {
+        start: '> '
+    },
+    end: {
+        start: '< '
+    }
+}
+logging.scheme = scheme;
+```
