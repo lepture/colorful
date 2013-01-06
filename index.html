@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="generator" content="nico 0.1.1">
+    <meta name="generator" content="nico 0.1.5">
     <meta name="theme" content="one 0.1">
     <title>Colorful</title>
     <link rel="stylesheet" href="./static/one.css" />
@@ -23,7 +23,7 @@
   <body>
     <div class="navigation" role="navigation">
       <div class="container">
-        <a class="home" href="">Colorful</a>
+        <a class="home" href="./">Colorful</a>
       </div>
     </div>
     <div class="document">
@@ -55,6 +55,11 @@ paint(<span class="string">'hello'</span>).bold.underline.red.color
 </code></pre></div><h2 id="detective">Detective</h2>
 <p>As a detective, you think we should detect if color is supported:</p>
 <div class="highlight"><pre><code class="javascript">require(<span class="string">'colorful'</span>).isSupported
+
+<span class="comment">// we can disable color</span>
+require(<span class="string">'colorful'</span>).disabled = <span class="literal">true</span>
+require(<span class="string">'colorful'</span>).isSupported
+<span class="comment">// =&gt; false</span>
 </code></pre></div>
 <hr/>
 <h1 id="logging">Logging</h1>
@@ -82,11 +87,39 @@ logging.end(<span class="string">'End Application'</span>)
 <span class="comment">// or</span>
 logging.config({level: <span class="string">'debug'</span>})
 logging.config({verbose: <span class="literal">true</span>})
-</code></pre></div><h2 id="customize">Customize</h2></div>
+</code></pre></div><h2 id="scheme">Scheme</h2>
+<p>Define your logging scheme:</p>
+<div class="highlight"><pre><code class="javascript"><span class="keyword">var</span> scheme = {
+    debug: {
+        start: <span class="string">'# '</span>,
+        color: <span class="string">'gray'</span>,
+        end: <span class="string">' #'</span>
+    },
+    info: {
+        start: <span class="string">'v '</span>,
+        color: <span class="string">'green'</span>
+    },
+    warn: {
+        start: <span class="string">'! '</span>,
+        color: <span class="string">'yellow'</span>
+    },
+    error: {
+        start: <span class="string">'x '</span>,
+        color: <span class="string">'red'</span>
+    },
+    start: {
+        start: <span class="string">'&gt; '</span>
+    },
+    end: {
+        start: <span class="string">'&lt; '</span>
+    }
+}
+logging.scheme = scheme;
+</code></pre></div></div>
 </div>
 </div>
     <div class="footer">
-      <p class="copyright">powered by <a href="http://lab.lepture.com/nico/">nico</a> 0.1.1</p>
+      <p class="copyright">powered by <a href="http://lab.lepture.com/nico/">nico</a> 0.1.5</p>
     </div>
     <script src="http://static.alipayobjects.com/seajs/1.2.1/sea.js" data-main="./static/one.js"></script>
     <div class="github"><a class="github-link" href="https://github.com/lepture/colorful">Fork me on GitHub</a></div>

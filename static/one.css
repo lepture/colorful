@@ -297,19 +297,8 @@ ol.entry-list {
   float: right;
 }
 .entry-meta {
-  width: 6em;
   color: #999;
   font-size: 13px;
-  float: left;
-  margin-right: 1em;
-  line-height: 26px;
-}
-.entry-meta .year {
-  display: block;
-  font-size: 26px;
-}
-.entry-meta .date {
-  font-size: 22px;
 }
 
 a.title-permalink {
