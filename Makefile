@@ -10,9 +10,9 @@ test:
 	@node_modules/.bin/mocha --reporter ${reporter} ${specs}
 
 
-files := $(shell find . -name '*.js' ! -path "*node_modules/*" ! -path "*lib/logging.js")
+files := $(shell find . -name '*.js' ! -path "*node_modules/*")
 lint:
-	@node_modules/.bin/jshint ${files} --config=scripts/config-lint.js
+	@node_modules/.bin/jshint ${files}
 
 out = tests/coverage.html
 coverage:
