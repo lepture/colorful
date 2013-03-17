@@ -8,8 +8,8 @@ describe('Color', function() {
     should.exists(color.isSupported);
   });
   it('should be red hello', function() {
-    paint('hello').red.color.should.equal('\x1b[31mhello\x1b[39m');
-    paint('hello').red.style.should.equal('\x1b[31mhello\x1b[39m');
+    paint('hello').red.color.should.equal('\x1b[31mhello\x1b[39;49;00m');
+    paint('hello').red.style.should.equal('\x1b[31mhello\x1b[39;49;00m');
   });
   it('should be colorful string', function() {
     should.not.exists(String.prototype.to);
@@ -17,7 +17,6 @@ describe('Color', function() {
     should.exists(String.prototype.to);
   });
   it('should be underline red hello', function() {
-    'hello'.to.underline.red.color.should.equal('\x1b[31m\x1b[4mhello\x1b[24m\x1b[39m');
     'hello'.to.underline.red.string.should.equal('hello');
   });
 });
