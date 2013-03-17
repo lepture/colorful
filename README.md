@@ -59,74 +59,9 @@ require('colorful').isSupported
 // => false
 ```
 
-------
 
-# Logging
+# Changelog
 
-Colorful and nested logging in terminal.
+- `1.3.0`
 
-[![nico](http://lab.lepture.com/nico/nico-look.png)](http://lab.lepture.com/nico/)
-
-## Favorite
-
-Default is my favorite, we should do nothing:
-
-```javascript
-var logging = require('colorful').logging;
-// start a nested logging
-logging.start('Start Application')
-logging.info('send an info message')
-
-// start another nested logging
-logging.start('Start subprocess')
-logging.warn('send a warn message')
-logging.end('End subprocess')
-
-logging.error('send an error message')
-logging.debug('send a debug message')
-logging.end('End Application')
-```
-
-## Config
-
-I want to show debug message:
-
-```javascript
-logging.config('debug')
-// or
-logging.config({level: 'debug'})
-logging.config({verbose: true})
-```
-
-## Scheme
-
-Define your logging scheme:
-
-```javascript
-var scheme = {
-    debug: {
-        start: '# ',
-        color: 'gray',
-        end: ' #'
-    },
-    info: {
-        start: 'v ',
-        color: 'green'
-    },
-    warn: {
-        start: '! ',
-        color: 'yellow'
-    },
-    error: {
-        start: 'x ',
-        color: 'red'
-    },
-    start: {
-        start: '> '
-    },
-    end: {
-        start: '< '
-    }
-}
-logging.scheme = scheme;
-```
+- removed logging

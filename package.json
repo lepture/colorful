@@ -1,13 +1,11 @@
 {
   "name": "colorful",
-  "version": "1.2.3",
-  "description": "colorful if a terminal tool for color, logging and command",
+  "version": "1.3.0",
+  "description": "colorful if a terminal tool for colors",
   "keywords": [
     "color",
-    "logging",
     "console",
-    "terminal",
-    "command"
+    "terminal"
   ],
   "author": {
     "name": "Hsiaoming Yang",
