@@ -59,6 +59,37 @@ require('colorful').isSupported
 // => false
 ```
 
+# Colors
+
+- bold
+- faint
+- italic
+- underline
+- blink
+- overline
+- inverse
+- conceal
+- strike
+- black
+- black_bg
+- red
+- red_bg
+- green
+- green_bg
+- yellow
+- yellow_bg
+- blue
+- blue_bg
+- magenta
+- magenta_bg
+- cyan
+- cyan_bg
+- white
+- white_bg
+- grey
+- gray
+- grey_bg
+- gray_bg
 
 # Changelog
 
