@@ -1,6 +1,6 @@
 {
   "name": "colorful",
-  "version": "2.0.0a1",
+  "version": "2.0.0",
   "description": "colorful if a terminal tool for colors",
   "keywords": [
     "color",
@@ -19,8 +19,5 @@
   },
   "devDependencies": {
     "jshint": "*"
-  },
-  "scripts": {
-    "test": "make test"
   }
 }
