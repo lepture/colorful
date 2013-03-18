@@ -105,15 +105,17 @@ require('colorful').isSupported
 - white_bg
 - grey
 - gray
-- grey_bg
-- gray_bg
 
 # Changelog
 
-## `2.0.0`
+## 2013-03-18 `2.0.1`
+
+Add gray color.
+
+## 2013-03-18 `2.0.0`
 
 Redesign. Support for ANSI 256 colors.
 
 ## `1.3.0`
 
-- removed logging
+- remove logging
