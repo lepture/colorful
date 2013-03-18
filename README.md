@@ -8,12 +8,14 @@ It's not just color, it's everything colorful in terminal.
 
 Color in terminal and only terminal.
 
+![screen shot](./screen-shot.png)
+
 ## Programmer
 
 As a programmer, you think they are functions:
 
 ```javascript
-var color = require('colorful').color
+var color = require('colorful')
 color.red('hello')
 color.underline('hello')
 color.red(color.underline('hello'))
@@ -45,6 +47,21 @@ require('colorful').colorful()
 'hello'.to.underline.bold.red.color
 'hello'.to.underline.bold.red.style
 ```
+
+
+## Artist
+
+As an artist, you need more colors.
+
+```javascript
+var Color = require('colorful').Color;
+
+var s = new Color('colorful');
+s.fgcolor = 13;
+s.bgcolor = 61;
+```
+
+Support ANSI 256 colors. [0 - 255]
 
 ## Detective
 
@@ -93,6 +110,10 @@ require('colorful').isSupported
 
 # Changelog
 
-- `1.3.0`
+## `2.0.0`
+
+Redesign. Support for ANSI 256 colors.
+
+## `1.3.0`
 
 - removed logging

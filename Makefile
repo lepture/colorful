@@ -15,6 +15,7 @@ theme = $(HOME)/.spm/themes/one
 documentation:
 	@cp README.md _docs/index.md
 	@nico build --theme=${theme}
+	@cp screen-shot.png _site/
 
 publish: clean documentation
 	@ghp-import _site -p

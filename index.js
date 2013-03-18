@@ -7,7 +7,7 @@ exports.paint = function(text) {
 exports.colorful = function() {
   // don't overwrite
   if (String.prototype.to) return;
-  Object.defineProperty(String, 'to', {
+  Object.defineProperty(String.prototype, 'to', {
     get: function() {
       return new exports.Color(this.valueOf());
     }
