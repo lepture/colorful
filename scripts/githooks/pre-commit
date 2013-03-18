@@ -44,18 +44,3 @@ fi
 if [[ $lint_errors -gt 0 ]]; then
     failCommit "Lint Errors"
 fi
-
-echo 'Running Tests...'
-result=$(make test)
-if grep -q FAILURES <<< $result; then
-    num=$(grep "FAILURES" <<< "$result")
-    testFail "Test $num"
-    echo "$result"
-    echo ''
-    echo 'Tests fail'
-    testsFailed=1
-fi
-
-if [[ $testsFailed || $lintFailed ]]; then
-    failCommit "Unable To Commit"
-fi
