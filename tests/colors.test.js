@@ -39,7 +39,7 @@ for (var i = 0; i < 256; i++) {
     console.log();
   }
   var c = new Color(wordwrap(i));
-  c.color = i;
+  c.fgcolor = i;
   process.stdout.write(c.valueOf());
 }
 console.log();

@@ -3,10 +3,8 @@ all:
 	@cp scripts/githooks/* .git/hooks/
 	@chmod -R +x .git/hooks/
 
-
-specs := $(shell find ./tests -name '*.test.js')
-test:
-	@node ${specs}
+colors:
+	@node tests/colors.test.js
 
 
 files := $(shell find . -name '*.js' ! -path "*node_modules/*")
