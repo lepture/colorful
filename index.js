@@ -1,1 +1,1 @@
-module.exports = require('./lib/color');
+exports.Color = require('./lib/ansi').Color;

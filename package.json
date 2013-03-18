@@ -1,9 +1,11 @@
 {
   "name": "colorful",
-  "version": "1.3.0",
+  "version": "2.0.0a1",
   "description": "colorful if a terminal tool for colors",
   "keywords": [
     "color",
+    "ansi",
+    "256color",
     "console",
     "terminal"
   ],
@@ -16,9 +18,7 @@
     "url": "https://github.com/lepture/colorful.git"
   },
   "devDependencies": {
-    "jshint": "*",
-    "mocha": "*",
-    "should": "*"
+    "jshint": "*"
   },
   "scripts": {
     "test": "make test"
