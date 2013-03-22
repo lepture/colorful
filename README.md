@@ -110,7 +110,7 @@ require('colorful').isSupported
 
 **2013-03-22** `2.0.2`
 
-Exports disabled of terminal.
+Merge terminal into ansi.
 
 **2013-03-18** `2.0.1`
 
