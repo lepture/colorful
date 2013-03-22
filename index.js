@@ -15,6 +15,8 @@ exports.colorful = function() {
 };
 
 var terminal = require('./lib/terminal');
+exports.disabled = terminal.disabled;
+
 Object.defineProperty(exports, 'isSupported', {
   get: terminal.isColorSupported
 });

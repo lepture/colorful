@@ -108,14 +108,14 @@ require('colorful').isSupported
 
 # Changelog
 
-## 2013-03-18 `2.0.1`
+**2013-03-22** `2.0.2`
+
+Exports disabled of terminal.
+
+**2013-03-18** `2.0.1`
 
 Add gray color.
 
-## 2013-03-18 `2.0.0`
+**2013-03-18** `2.0.0`
 
 Redesign. Support for ANSI 256 colors.
-
-## `1.3.0`
-
-- remove logging
