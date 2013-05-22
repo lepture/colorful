@@ -120,6 +120,10 @@ require('colorful').isSupported
 
 # Changelog
 
+**2013-05-22** `2.1.0`
+
+Add toxic API.
+
 **2013-03-22** `2.0.2`
 
 Merge terminal into ansi.
