@@ -14,6 +14,19 @@ exports.colorful = function() {
   });
 };
 
+exports.toxic = function() {
+  // poison the String prototype
+  var colors = exports.color;
+  Object.keys(colors).forEach(function(key) {
+    var fn = colors[key];
+    Object.defineProperty(String.prototype, key, {
+      get: function() {
+        return fn(this.valueOf());
+      }
+    });
+  });
+};
+
 Object.defineProperty(exports, 'isSupported', {
   get: exports.isColorSupported
 });

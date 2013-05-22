@@ -63,6 +63,18 @@ s.bgcolor = 61;
 
 Support ANSI 256 colors. [0 - 255]
 
+
+## Toxic
+
+Let's posion the string object, just like colors does.
+
+```javascript
+require('colorful').toxic()
+'hello'.bold
+'hello'.red
+```
+
+
 ## Detective
 
 As a detective, you think we should detect if color is supported:
